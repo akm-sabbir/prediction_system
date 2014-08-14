@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Language_experience" >
+
+    <TextView
+        android:id = "@+id/experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft ="@layout/activity_language_experience"
+        android:layout_alignTop="@layout/activity_language_experience"
+        android:text="Experiences"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:textSize="20sp" />
+    <TextView
+        android:id = "@+id/java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/experience"
+        android:layout_alignLeft="@id/experience"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:text="@string/javac" />
+    <EditText
+        android:id = "@+id/java_edit"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_alignBottom="@id/java"
+        android:layout_below="@id/experience"
+        android:layout_toRightOf="@id/java"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:inputType="number"
+        />
+     <TextView
+        android:id = "@+id/cplusplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/java"
+        android:layout_alignLeft="@id/java"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:text="@string/cplusplus" />
+    <EditText
+        android:id = "@+id/cplusplus_edit"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_alignBottom="@id/cplusplus"
+        android:layout_below="@id/java_edit"
+        android:layout_toRightOf="@id/java"
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:inputType="number"
+        />
+ <TextView
+        android:id = "@+id/cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cplusplus"
+        android:layout_alignLeft="@id/cplusplus"
+        android:paddingTop="20dp"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        android:text="@string/cp" />
+    <EditText
+        android:id = "@+id/cp_edit"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_alignBottom="@id/cp"
+        android:layout_below="@id/cplusplus_edit"
+        android:layout_toRightOf="@id/cp"
+        android:layout_marginRight="10sp"
+        android:layout_alignLeft="@id/java_edit"
+        android:inputType="number"
+        />
+    <TextView
+        android:id = "@+id/visual_cp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cp"
+        android:layout_alignLeft="@id/cp"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:text="@string/visual_cp" />
+    <EditText
+        android:id = "@+id/visual_cp_edit"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_alignBottom="@id/visual_cp"
+        android:layout_below="@id/cp_edit"
+        android:layout_toRightOf="@id/visual_cp"
+        android:layout_marginRight="10sp"
+       android:layout_marginLeft="5dp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/experience_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/visual_cp_edit"
+        android:layout_below="@+id/visual_cp_edit"
+        android:layout_marginTop="24dp"
+        android:text="@string/next" />
+
+</RelativeLayout>

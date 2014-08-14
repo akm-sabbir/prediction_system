@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.predictionsystem"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+      
+       >
+        <provider android:name="com.android.predictionsystems.data.universalContentProvider"
+     			  android:authorities="com.android.predictionsystems.data">
+        </provider>
+        <reciever
+            android:name = "com.android.predictionsystem.broadcastrecievers.serviceBroadcastreciever">
+           
+            </reciever>
+        <service
+            android:name="com.android.predictionsystem.services.sessionService"
+           
+            android:enabled="true">
+            
+            </service>
+        <activity
+            android:name="com.android.predictionsystem.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+			    <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.predictionsystem.SignUp"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name="com.android.predictionsystem.Language_experience"
+            android:label="@string/title_activity_language_experience" >
+        </activity>
+         <activity
+            android:name="com.android.predictionsystem.Spinner_Tech"
+            android:label="title_activity_spinner_tech"
+            android:windowSoftInputMode="adjustNothing" >
+        </activity>
+        <activity
+            android:name="com.android.predictionsystem.fragments.Fragment_exam"
+            android:label="@string/title_activity_fragment_exam">
+           
+        </activity>
+     
+    </application>
+
+</manifest>

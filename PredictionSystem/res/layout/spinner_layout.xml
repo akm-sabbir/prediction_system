@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dip"
+    android:orientation="vertical" > 
+  <FrameLayout
+    
+    android:layout_weight="1"
+    android:layout_width="match_parent" 
+    android:orientation="vertical"
+    android:layout_height="0px"
+    android:layout_gravity="top"
+     >
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingTop="5dip" >
+
+   <CheckBox
+        android:id="@+id/CheckBox01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select to Add Experience Information"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans" />  
+   <TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15dip"
+    android:textStyle="bold"
+    android:paddingLeft="5dip"
+    android:layout_below="@id/CheckBox01"
+    android:typeface="sans"
+    android:paddingTop="15dip"
+    android:text="Select Technology" />    <Spinner
+        android:id="@+id/spinnerItem"
+        android:layout_width ="250dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dip" 
+        android:dropDownSelector="@android:color/black"
+        android:layout_below="@id/CheckBox01"
+        android:layout_toRightOf="@id/textView1"/>
+    <TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textView1"
+    android:layout_alignLeft="@id/textView1"
+    android:paddingTop="15dip"
+    android:paddingLeft="5dip"
+    android:textSize="15dip"
+    android:textStyle="bold"
+    android:typeface="sans"
+    android:text="Enter Experience (Year)" />
+    <EditText
+    android:id="@+id/editText"
+    android:inputType="numberDecimal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/spinnerItem"
+    android:layout_alignLeft="@id/spinnerItem"
+    android:ems="10" >
+</EditText>
+
+  <Button
+    android:id="@+id/next"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/editText"
+    android:layout_alignRight="@id/editText"
+    android:text="Next" />
+       
+  </RelativeLayout>
+</FrameLayout>
+<FrameLayout
+    android:id = "@+id/algorithms"
+    android:layout_weight="1.6"
+    android:layout_width="match_parent" 
+    android:orientation="vertical"
+    android:layout_height="0px"
+    android:layout_gravity="bottom"
+     >
+  <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dip" >
+
+     <CheckBox
+      android:id="@+id/checkBox2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      
+      android:textSize="15dip"
+      android:textStyle="bold"
+      android:typeface="sans"
+      android:text="Select to Add Algorithm Information" />
+   <ListView
+ 		 android:id="@+id/list"
+ 		 android:layout_width="match_parent"
+ 		 android:layout_height="wrap_content"
+ 		 android:layout_below="@id/checkBox2"
+ 		 android:layout_marginLeft="10dip"
+ 		 android:choiceMode = "multipleChoice"
+ 		 android:scrollbars="vertical"
+     >
+	</ListView> 
+
+	</RelativeLayout>
+</FrameLayout>
+	<FrameLayout
+    android:layout_weight=".4"
+    android:layout_width="match_parent" 
+    android:orientation="vertical"
+    android:layout_height="0px"
+    android:layout_gravity="bottom">
+	<Button
+    android:id="@+id/submit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:text="Add" />
+	  </FrameLayout>
+</LinearLayout>

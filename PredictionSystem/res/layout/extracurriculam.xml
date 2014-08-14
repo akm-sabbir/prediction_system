@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+  
+<FrameLayout
+    android:id = "@+id/algorithms"
+    android:layout_weight="1.2"
+    android:layout_width="match_parent" 
+    android:orientation="vertical"
+    android:layout_height="0px"
+    android:layout_gravity="top"
+     >
+  <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dip" >
+
+     <CheckBox
+      android:id="@+id/checkBoxforCurriculam"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/textView1"
+      android:textSize="15dip"
+      android:textStyle="bold"
+      android:typeface="sans"
+      android:text="Select to Add Algorithm Information" />
+   <ListView
+ 		 android:id="@+id/listforCurriculam"
+ 		 android:layout_width="match_parent"
+ 		 android:layout_height="wrap_content"
+ 		 android:layout_below="@id/checkBoxforCurriculam"
+ 		 android:layout_marginLeft="10dip"
+ 		 android:layout_marginTop="5dip"
+ 		 android:choiceMode = "multipleChoice"
+ 		 android:scrollbars="vertical"
+     >
+	</ListView> 
+
+	</RelativeLayout>
+</FrameLayout>
+	<FrameLayout
+    android:layout_weight=".4"
+    android:layout_width="match_parent" 
+    android:orientation="vertical"
+    android:layout_height="0px"
+    android:layout_gravity="center">
+	<Button
+    android:id="@+id/submitforCurriculam"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:text="Add" />
+	  </FrameLayout>
+	  <FrameLayout
+    android:layout_weight=".4"
+    android:layout_width="match_parent" 
+    android:orientation="vertical"
+    android:layout_height="0px"
+    android:layout_gravity="bottom">
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+	 <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Press start to commence Exam" />
+	<Button
+    android:id="@+id/startforCurriculam"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="Start" />
+	</LinearLayout>
+	  </FrameLayout>
+	  
+	  
+</LinearLayout>
